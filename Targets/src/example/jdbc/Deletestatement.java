@@ -13,7 +13,7 @@ public class Deletestatement {
 		 int r = 0;
 		 try{
 			 Class.forName("com.mysql.jdbc.Driver");//1
-			 con = DriverManager.getConnection("jdbc:mysql://localhost:3306/dinesh", "root", "root");
+			 con = DriverManager.getConnection("jdbc:mysql://localhost:3306/bankdetails", "root", "root");
 			 ps = con.prepareStatement("Delete from student  where stid =?");
 			 Scanner sc = new Scanner(System.in);
 			 System.out.println("Enter student id");
