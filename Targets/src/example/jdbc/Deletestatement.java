@@ -38,5 +38,7 @@ public class Deletestatement {
 		Deletestatement ds = new Deletestatement();
 		ds.deletestudentdetails();
 	}
+	
+	//This is a push example
 
 }
