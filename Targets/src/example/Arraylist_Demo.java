@@ -47,7 +47,7 @@ System.out.println("This is an example of the arraylist");
 
 }
 
- 
+//This is an example 
 
 }
 
