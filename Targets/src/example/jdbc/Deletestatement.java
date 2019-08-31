@@ -14,14 +14,12 @@ public class Deletestatement {
 		 try{
 			 Class.forName("com.mysql.jdbc.Driver");//1
 			 con = DriverManager.getConnection("jdbc:mysql://localhost:3306/bankdetails", "root", "root");
-			 ps = con.prepareStatement("Delete from student  where stid =?");
+			 String sql = "DELETE FROM bank WHERE Account Name =?";
+			  ps = con.prepareStatement(sql);
 			 Scanner sc = new Scanner(System.in);
-			 System.out.println("Enter student id");
-			 int stid = sc.nextInt();
-			 //System.out.println("Enter student phone number");
-			 //int phone = sc.nextInt();
-			 ps.setInt(1, stid);
-			
+			 System.out.println("Enter Account Name");
+			 String stid = sc.next();
+			 ps.setString(1, stid);
 			 r = ps.executeUpdate();
 			 if(r==0){
 				 System.out.println("Record not found");
